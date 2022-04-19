@@ -107,7 +107,6 @@ public class MedicalServiceImplTest {
 
         sut.checkBloodPressure(patientInfo.getId(),patientInfo.getHealthInfo().getBloodPressure());
         sut.checkTemperature(patientInfo.getId(),patientInfo.getHealthInfo().getNormalTemperature());
-        sut.checkTemperature(patientInfo.getId(),new BigDecimal("35.0"));
 
         Mockito.verifyNoInteractions(alertService);
     }
